@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    
+    <link rel="StyleSheet" href="{{ url_for('static',filename='css/style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='script/script.js') }}">
+
+    </script>
+</head>
+<body>
+    <h2>Forms</h2>
+    <form action="/submit" method="POST">
+        <label for="eng">English:</label><br>
+        <input type="text" id="eng" name="eng"><br>
+        <label for="maths">Maths:</label><br>
+        <input type="text" id="maths" name="maths"><br>
+        <label for="sci">Science:</label><br>
+        <input type="text" id="sci" name="sci"><br>
+        <label for="soc">Social:</label><br>
+        <input type="text" id="soc" name="soc"><br>
+        <input type="submit" value="Submit"><br>
+    </form>
+
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/submit".</p>
+</body>
+</html>
